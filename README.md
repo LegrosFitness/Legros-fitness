@@ -11,7 +11,7 @@ Ofrezco:
 ¿Listo/a para transformar tu cuerpo y tu estilo de vida?  
 ¡Contáctame a través de mi página web o por correo electrónico!
 
-- **Visita la web:** [ENLACE A TU PÁGINA]
+- **Visita la web:** [www.legrosfitness.com](https://www.legrosfitness.com)
 - **Correo electrónico:** [legrosfitness@gmail.com](mailto:legrosfitness@gmail.com)
 
 ## 🛠 Servicios
@@ -28,3 +28,4 @@ Con experiencia en entrenamiento físico y nutrición, mi misión es llevarte a 
 
 ¡Juntos lograremos tus objetivos!  
 💪 **#LegrosFitness #EntrenamientoPersonal #Nutrición**
+
