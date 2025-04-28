@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeGros Fitness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #1d3557;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav button {
+      margin: 0 5px;
+      padding: 10px 20px;
+      background-color: #457b9d;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    nav button:hover {
+      background-color: #a8dadc;
+      color: #1d3557;
+    }
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: cover;
+    }
+    .content {
+      padding: 2rem;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+    }
+    .footer {
+      background: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LeGros Fitness</h1>
+  <nav>
+    <button onclick="changeLanguage('es')">Español</button>
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('fr')">Français</button>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="img/portada.jpg" alt="Foto de portada de LeGros Fitness">
+</div>
+
+<div class="content" id="content">
+  <h2>Sobre mí</h2>
+  <p>
+    Con más de <strong>7 años de experiencia</strong> como <strong>entrenador personal</strong> y
+    <strong>técnico especialista en fitness y entrenamiento personal</strong>, he ayudado a más de <strong>1000 personas</strong>
+    a transformar su vida, mejorar su físico y alcanzar una mejor salud.
+    Mi misión es llevar tu bienestar al siguiente nivel, guiándote con pasión, compromiso y profesionalismo.
+  </p>
+</div>
+
+<div class="content">
+  <h2>Encuéntrame aquí</h2>
+  <iframe
+    src="https://maps.google.com/maps?q=48.856614,2.3522215&z=15&output=embed"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
+
+<div class="footer">
+  <p>LeGros Fitness - Transformando vidas con pasión</p>
+</div>
+
+<script>
+const translations = {
+  es: {
+    title: 'Sobre mí',
+    text: 'Con más de 7 años de experiencia como entrenador personal y técnico especialista en fitness y entrenamiento personal, he ayudado a más de 1000 personas a transformar su vida, mejorar su físico y alcanzar una mejor salud. Mi misión es llevar tu bienestar al siguiente nivel, guiándote con pasión, compromiso y profesionalismo.'
+  },
+  en: {
+    title: 'About Me',
+    text: 'With over 7 years of experience as a personal trainer and certified fitness and personal training specialist, I have helped more than 1000 people transform their lives, improve their physique, and achieve better health. My mission is to take your wellness to the next level with passion, commitment, and professionalism.'
+  },
+  fr: {
+    title: 'A propos de moi',
+    text: "Avec plus de 7 ans d'expérience en tant qu'entraîneur personnel et spécialiste certifié en fitness et entraînement personnel, j'ai aidé plus de 1000 personnes à transformer leur vie, améliorer leur physique et atteindre une meilleure santé. Ma mission est d'améliorer votre bien-être avec passion, engagement et professionnalisme."
+  }
+};
+
+function changeLanguage(lang) {
+  const content = document.getElementById('content');
+  content.innerHTML = `<h2>${translations[lang].title}</h2><p>${translations[lang].text}</p>`;
+}
+</script>
+
+</body>
+</html>
